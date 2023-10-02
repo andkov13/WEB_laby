@@ -1,0 +1,106 @@
+*{
+    font-family: 'Mooli', sans-serif;
+    color: white;
+}
+
+body{
+    background-image: url("images/background.jpg");
+    background-size: cover;
+}
+
+header{
+    height: 60px;
+}
+
+#logo{
+    margin: auto;
+    height: 50px;
+}
+
+nav{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+label{
+    margin: 50px;
+}
+
+.section-wrapper{
+    display: flex;
+}
+
+.section-navigation{
+    text-align: center;
+    width: 225px;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.section-main{
+    width: 100%;
+}
+
+.table {
+    margin-top: 50px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 40%;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+}
+
+.table p{
+    display: inline;
+    margin-left: 10px; 
+    color: green;
+}
+
+.login_form_container{
+    display: flex;
+    justify-content: center;
+}
+
+.login_form{
+    border: 2px solid white;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.login_form h3{
+    text-align: center;
+}
+
+.login_form input{
+    color: black;
+}
+
+.login_form input[type="password"]{
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.button_style{
+   text-align: center;
+}
+
+.login_form button{
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+}

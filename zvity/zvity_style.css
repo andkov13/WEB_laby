@@ -1,0 +1,61 @@
+header{
+    text-align: center;
+}
+
+.header_container{
+    display: flex;
+    width: 100%;
+}
+
+.headers{
+    width: 100%;
+}
+
+header img{
+    top: 0;
+    right: 0;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+nav button{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+}
+
+.main_page{
+    display: flex;
+}
+
+.buttons{
+    width: 20%;
+}
+
+.buttons button{
+    display: block; 
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+}
+
+.output{
+    flex: 1;
+    border: 1px solid black;
+}
+
+.output img{
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+}
