@@ -59,7 +59,7 @@ label{
 .table p{
     display: inline;
     margin-left: 10px; 
-    color: green;
+    color: red;
 }
 
 .login_form_container{
@@ -73,7 +73,7 @@ label{
     margin-top: 50px;
 }
 
-.login_form h3{
+.login_form label{
     text-align: center;
 }
 
