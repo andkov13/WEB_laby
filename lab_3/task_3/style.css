@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #d5d5d5;
+}
+
+a{
+    text-decoration: none;
+}
+
+a::after{
+    color: black;
+}
+
+header{
+    display: flex;
+}
+
+header a{
+    display: flex;
+    padding: 10px;
+}
+
+header img{
+    height: 50px;
+}
+
+header h1{
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+nav{
+    padding: 10px 50px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+nav select{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 0px 50px;
+}
+
+select option {
+    background-color: black;
+    color: white;
+}
+  
+select option:checked {
+    background-color: #007bff;
+    color: #fff;
+}
+
+main h1{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.container{
+    display: flex;
+    align-items: stretch;
+}
+
+.container a:visited,  #company, header a:visited{
+    color: black;
+}
+
+.container a{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.mini-container img{
+    height: 150px;
+}
+
+.mini-container h2{
+    margin: 10px;
+}
+
+.mini-container p{
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+#container_2{
+    display: flex;
+    margin: 0px 50px;
+    justify-content: space-between;
+}
+
+#container_2 img{
+    height: 400px;
+}
+
+#company-name{
+    color: rgb(0, 132, 255);
+    font-weight: bolder;
+}
+
+#container_3{
+    padding: 20px 100px;
+    display: flex;
+}
+
+#container_3 img{
+    height: 400px;
+}
+
+.company-information{
+    margin: 20px;
+}
+
+.company-information p{
+    margin: 10px 0px;
+}
+
+footer{
+    text-align: center;
+    margin: 20px 0px;
+}
