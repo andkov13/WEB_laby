@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var button_lab1 = document.getElementById("lab1");
     var button_lab2 = document.getElementById("lab2");
     var button_lab3 = document.getElementById("lab3");
+    var button_lab4 = document.getElementById("lab4");
 
     var button1 = document.getElementById("button_1");
     var button2 = document.getElementById("button_2");
@@ -29,6 +30,10 @@ document.addEventListener("DOMContentLoaded", function() {
         button6.innerText = "html-код зображення";
         button7.innerText = "Висновок";
         button8.innerText = "";
+        button9.innerText = "";
+        button10.innerText = "";
+        button11.innerText = "";
+        button12.innerText = "";
     });
 
     button_lab2.addEventListener("click", function() {
@@ -41,10 +46,14 @@ document.addEventListener("DOMContentLoaded", function() {
         button6.innerText = "Інші селектори";
         button7.innerText = "СSS: Шрифти, Контури, Фон, Колір тексту";
         button8.innerText = "Висновок";
+        button9.innerText = "";
+        button10.innerText = "";
+        button11.innerText = "";
+        button12.innerText = "";
     });
 
     button_lab3.addEventListener("click", function() {
-        lab2EventList();
+        lab3EventList();
         button1.innerText = "Тема, мета";
         button2.innerText = "Завдвння №1: зовнішній вигляд макету, код макету";
         button3.innerText = "Завдання №2";
@@ -57,6 +66,22 @@ document.addEventListener("DOMContentLoaded", function() {
         button10.innerText = "html-код (Flexbox)";
         button11.innerText = "css-код (Flexbox)";
         button12.innerText = "Висновок";
+    });
+
+    button_lab4.addEventListener("click", function() {
+        lab4EventList();
+        button1.innerText = "Тема, мета";
+        button2.innerText = "Мобільна версія";
+        button3.innerText = "Планшетна версія";
+        button4.innerText = "Десктоп версія";
+        button5.innerText = "Висновок";
+        button6.innerText = "";
+        button7.innerText = "";
+        button8.innerText = "";
+        button9.innerText = "";
+        button10.innerText = "";
+        button11.innerText = "";
+        button12.innerText = "";
     });
 
     function lab1EventList(){
@@ -123,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    function lab2EventList(){
+    function lab3EventList(){
         button1.addEventListener("click", function() {
             displayedImage.src = "images/lab_3/img_0.png";
         });
@@ -173,5 +198,26 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
        
+    function lab4EventList(){
+        button1.addEventListener("click", function() {
+            displayedImage.src = "images/lab_4/img_0.png";
+        });
+    
+        button2.addEventListener("click", function() {
+            displayedImage.src = "images/lab_4/img_1.jpg";
+        });
+    
+        button3.addEventListener("click", function() {
+            displayedImage.src = "images/lab_4/img_2.jpg";
+        });
+    
+        button4.addEventListener("click", function() {
+            displayedImage.src = "images/lab_4/img_3.jpg";
+        });
+    
+        button5.addEventListener("click", function() {
+            displayedImage.src = "images/lab_4/img_7.png";
+        });
+    }
        
 });

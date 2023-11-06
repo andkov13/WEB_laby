@@ -76,6 +76,7 @@ main h1{
 .container{
     display: flex;
     align-items: stretch;
+    flex-wrap: wrap;
 }
 
 .container a:visited,  #company, header a:visited{
@@ -83,15 +84,19 @@ main h1{
 }
 
 .container a{
+    flex: 1;
     background-color: white;
     margin: 20px;
     padding: 20px;
     text-align: center;
-    flex: 1;
+}
+
+.mini-container{
+    flex-direction: column;
 }
 
 .mini-container img{
-    height: 150px;
+    height: 200px;
 }
 
 .mini-container h2{
@@ -107,10 +112,11 @@ main h1{
     display: flex;
     margin: 0px 50px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #container_2 img{
-    height: 400px;
+    width: 40vh;
 }
 
 #company-name{
@@ -124,7 +130,7 @@ main h1{
 }
 
 #container_3 img{
-    height: 400px;
+    width: 300px;
 }
 
 .company-information{

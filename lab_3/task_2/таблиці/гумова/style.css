@@ -23,15 +23,15 @@ table, th,td{
 #top, #bottom{
     background-color: blue;
     color: white;
-    height: 100px;
+    height: 10vh;
 }
 
 .side-column, #center-column{
-    height: 500px;
+    height: 50vh;
 }
 
 .side-column{
     background-color: yellow;
-    width: 200px;
+    width: 20%;
 }
 
