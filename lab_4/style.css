@@ -29,20 +29,28 @@ header .container{
     margin-top: 5px;
 }
 
+.logo{
+    height: 40px;
+}
+
 header .icon{
     background-color: #002f3e;
     padding: 10px;
     border-radius: 10px;
-    margin: 0px 10px;
+    margin: 0px 5px;
+}
+
+#log-in-text{
+    display: none;
 }
 
 header label{
-    font-size: 20px;
+    font-size: 10px;
     margin-bottom: 10px;
 }
 
 #search-image, #user-image{
-    font-size: 25px;
+    font-size: 15px;
 }
 
 
@@ -56,12 +64,14 @@ nav ul{
 }
 
 nav li{
-    margin: 0px 50px;
+    margin: 0px 20px;
     display: inline-block;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
 }
 
-nav li:hover{
-    cursor: pointer;
+nav li:first-child, nav li:last-child{
+    display: none;
 }
 
 /*  body  */
@@ -76,41 +86,19 @@ body{
 
 
 #sidebar{
-    float: left;
-    width: 20%;
-    box-sizing: border-box;
-    padding: 10px;
-    padding-top: 30px;
-}
-
-.sidebar-element, .sidebar-element-nohover{
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.sidebar-element-nohover{
-    margin-top: 30px;
-}
-
-.sidebar-element:hover{
-    background-color: #002f3e;
-}
-
-.sidebar-element label{
-    margin-left: 10px;
+    display: none;
 }
 
 /*  main  */
 
 #main{
-    float: right;
-    width: 80%;
+    width: 100%;
     box-sizing: border-box;
 }
 
 #main .container{
     margin: 20px;
-    padding: 20px;
+    padding: 5px;
     border-radius: 10px;
     background-color: #001e28;
 }
@@ -136,22 +124,25 @@ body{
 
 .game .team-logo{
     margin: 10px 0px;
-    height: 50px;
+    height: 25px;
 }
 
-.game .team, .game .game-score{
-    font-size: 40px;
+.game .team, .game .game-time{
+    font-size: 18px;
     margin: 10px 10px 0px 10px;
 }
 
-.game .game-status{
-    float:left;
-    font-size: 30px;
-    margin: 20px 20px 0px 20px;
+.game-status, .game-score{
+    display: none;
 }
 
-.game label:hover{
-    cursor: pointer;
+.game-time{
+    display:inline;
+}
+
+.game-time label{
+    color: rgb(162,162,255);
+    letter-spacing: 0.2em;
 }
 
 .teams-and-score{
@@ -164,11 +155,216 @@ body{
 
 
 footer{
-    text-align: center;
-    clear: both;
-    padding: 20px;
+    display: none;
 }
 
-footer hr, label{
-    margin-bottom: 20px;
+@media only screen and (min-width: 768px){
+    
+/*  header  */
+
+/*  search and user icons  */
+
+.logo{
+    height: 50px;
+}
+
+header .icon{
+    margin: 0px 10px;
+}
+
+#log-in-text{
+    display: inline;
+}
+
+header label{
+    font-size: 20px;
+}
+
+#search-image, #user-image, #bars-image{
+    font-size: 25px;
+}
+
+
+/*  navbar styles  */
+
+
+nav li{
+    margin: 0px 30px;
+    font-size: 1.5em;
+}
+
+nav li:first-child, nav li:last-child{
+    display: inline;
+}
+
+/*  body  */
+
+/*  side bar  */
+
+/*  main  */
+
+/*  game-box  */
+
+.game .team-logo{
+    height: 35px;
+}
+
+.game .team, .game .game-score{
+    display: inline;
+    font-size: 30px;
+    margin: 10px 10px 0px 10px;
+}
+
+.game-time{
+    display: none;
+}
+
+.game .game-status{
+    display: inline;
+    float:left;
+    font-size: 30px;
+    margin: 20px 20px 0px 20px;
+}
+
+.game-status label{
+    color: rgb(162,162,255);
+    letter-spacing: 0.2em;
+}
+
+/*  footer  */
+
+}
+
+@media only screen and (min-width: 1425px){
+    /*  header  */
+
+    /*  search and user icons  */
+
+    .logo{
+        height: 50px;
+    }
+
+    header .icon{
+        margin: 0px 10px;
+    }
+
+    #log-in-text{
+        display: inline;
+    }
+
+    header label{
+        font-size: 20px;
+    }
+
+    #search-image, #user-image{
+        font-size: 25px;
+    }
+
+    #bars-icon{
+        display: none;
+    }
+
+    /*  navbar styles  */
+
+    nav li{
+        margin: 0px 100px;
+        font-size: 1.5em;
+    }
+
+    nav li:hover{
+        cursor: pointer;
+    }
+
+    nav li:first-child, nav li:last-child{
+        display: inline;
+    }
+
+    /*  body  */
+
+    /*  side bar  */
+
+
+    #sidebar{
+        display: inline;
+        float: left;
+        width: 20%;
+        box-sizing: border-box;
+        padding: 10px;
+        padding-top: 30px;
+    }
+
+    .sidebar-element, .sidebar-element-nohover{
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .sidebar-element-nohover{
+        margin-top: 30px;
+    }
+
+    .sidebar-element:hover{
+        background-color: #002f3e;
+    }
+
+    .sidebar-element label{
+        margin-left: 10px;
+    }
+
+    /*  main  */
+
+    #main{
+        float: right;
+        width: 80%;
+    }
+
+    #main .container{
+        padding: 20px;
+    }
+
+
+    /*  game-box  */
+
+    .game .team-logo{
+        height: 50px;
+    }
+
+    .game .team, .game .game-score{
+        display: inline;
+        font-size: 40px;
+        margin: 10px 10px 0px 10px;
+    }
+
+    .game-time{
+        display:none;
+    }
+
+    .game .game-status{
+        display: inline;
+        float:left;
+        font-size: 30px;
+        margin: 20px 20px 0px 20px;
+    }
+
+    .game-status label{
+        color: rgb(162,162,255);
+        letter-spacing: 0.2em;
+    }
+
+    .game label:hover{
+        cursor: pointer;
+    }
+
+    /*  footer  */
+
+
+    footer{
+        display: block;
+        text-align: center;
+        clear: both;
+        padding: 20px;
+    }
+
+    footer hr, label{
+        margin-bottom: 20px;
+    }
 }
