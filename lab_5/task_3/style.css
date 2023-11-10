@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    user-select: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*  header  */
+
+
+header{
+    background-color: #001e28;
+    padding: 10px 10px 5px 10px;
+}
+
+
+/*  search and user icons  */
+
+
+header .container{
+    display: flex;
+    float: right;
+    margin-top: 5px;
+}
+
+.logo{
+    height: 40px;
+}
+
+header .icon{
+    background-color: #002f3e;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0px 5px;
+}
+
+#log-in-text{
+    display: none;
+}
+
+header label{
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+#search-image, #user-image{
+    font-size: 15px;
+}
+
+
+/*  navbar styles  */
+
+
+nav ul{
+    padding-top: 30px;
+    list-style: none;
+    text-align: center;
+}
+
+nav li{
+    margin: 0px 20px;
+    display: inline-block;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+}
+
+nav li:first-child, nav li:last-child{
+    display: none;
+}
+
+/*  body  */
+
+
+body{
+    background-color: #00141e;
+}
+
+
+/*  side bar  */
+
+
+#sidebar{
+    display: none;
+    width: 60%;
+    box-sizing: border-box;
+    padding: 10px;
+    z-index: 999;
+    position: absolute;
+    top: 53px;
+    right: 15px;
+    background-color: #002f3e;
+    border-radius: 20px;
+}
+
+.sidebar-element, .sidebar-element-nohover{
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.sidebar-element:active{
+    background-color: #001e28;
+}
+
+.sidebar-element label{
+    margin-left: 10px;
+}
+
+/*  main  */
+
+#main{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#main .container{
+    margin: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #001e28;
+}
+
+
+/*  game-box  */
+
+.game{
+    display: flex;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+
+.game1{
+    display: flex;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+.game:hover{
+    background-color: #002f3e;
+}
+
+.game .team-logo{
+    margin: 10px 0px;
+    height: 25px;
+}
+
+.game .team, .game .game-time{
+    font-size: 18px;
+    margin: 10px 10px 0px 10px;
+}
+
+.game-status, .game-score{
+    display: none;
+}
+
+.game-time{
+    display:inline;
+}
+
+.game-time label{
+    color: rgb(162,162,255);
+    letter-spacing: 0.2em;
+}
+
+.teams-and-score{
+    display: flex;
+    margin: auto;
+}
+
+
+/*  footer  */
+
+
+footer{
+    display: none;
+}
+
+@media only screen and (min-width: 768px){
+    
+/*  header  */
+
+/*  search and user icons  */
+
+.logo{
+    height: 50px;
+}
+
+header .icon{
+    margin: 0px 10px;
+}
+
+#log-in-text{
+    display: inline;
+}
+
+header label{
+    font-size: 20px;
+}
+
+#search-image, #user-image, #bars-image{
+    font-size: 25px;
+}
+
+
+/*  navbar styles  */
+
+
+nav li{
+    margin: 0px 30px;
+    font-size: 1.5em;
+}
+
+nav li:first-child, nav li:last-child{
+    display: inline;
+}
+
+/*  body  */
+
+/*  side bar  */
+
+#sidebar{
+    display: none;
+    width: 60%;
+    box-sizing: border-box;
+    padding: 10px;
+    z-index: 999;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #002f3e;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.sidebar-element label, .sidebar-element-nohover label{
+    font-size: 1.5em;
+}
+
+/*  main  */
+
+/*  game-box  */
+
+.game .team-logo{
+    height: 35px;
+}
+
+.game .team, .game .game-score{
+    display: inline;
+    font-size: 30px;
+    margin: 10px 10px 0px 10px;
+}
+
+.game-time{
+    display: none;
+}
+
+.game .game-status{
+    display: inline;
+    float:left;
+    font-size: 30px;
+    margin: 20px 20px 0px 20px;
+}
+
+.game-status label{
+    color: rgb(162,162,255);
+    letter-spacing: 0.2em;
+}
+
+/*  footer  */
+
+}
+
+@media only screen and (min-width: 1425px){
+    /*  header  */
+
+    /*  search and user icons  */
+
+    .logo{
+        height: 50px;
+    }
+
+    header .icon{
+        margin: 0px 10px;
+    }
+
+    #log-in-text{
+        display: inline;
+    }
+
+    header label{
+        font-size: 20px;
+    }
+
+    #search-image, #user-image{
+        font-size: 25px;
+    }
+
+    #bars-icon{
+        display: none;
+    }
+
+    /*  navbar styles  */
+
+    nav li{
+        margin: 0px 100px;
+        font-size: 1.5em;
+    }
+
+    nav li:hover{
+        cursor: pointer;
+    }
+
+    nav li:first-child, nav li:last-child{
+        display: inline;
+    }
+
+    /*  body  */
+
+    /*  side bar  */
+
+    /*
+
+    #sidebar{
+        display: inline;
+        float: left;
+        width: 20%;
+        box-sizing: border-box;
+        padding: 10px;
+        padding-top: 30px;
+    }
+
+    .sidebar-element, .sidebar-element-nohover{
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .sidebar-element-nohover{
+        margin-top: 30px;
+    }
+
+    .sidebar-element:hover{
+        background-color: #002f3e;
+    }
+
+    .sidebar-element label{
+        margin-left: 10px;
+    }
+
+    */
+
+    #sidebar{
+        display: inline;
+        float: left;
+        width: 20%;
+        padding-top: 30px;
+        position: static;
+        background-color: #00141e;
+    }
+    
+    .sidebar-element-nohover{
+        margin-top: 30px;
+    }
+    
+    .sidebar-element:hover{
+        background-color: #002f3e;
+    }
+
+    /*  main  */
+
+    #main{
+        float: right;
+        width: 80%;
+    }
+
+    #main .container{
+        padding: 20px;
+    }
+
+
+    /*  game-box  */
+
+    .game .team-logo{
+        height: 50px;
+    }
+
+    .game .team, .game .game-score{
+        display: inline;
+        font-size: 40px;
+        margin: 10px 10px 0px 10px;
+    }
+
+    .game-time{
+        display:none;
+    }
+
+    .game .game-status{
+        display: inline;
+        float:left;
+        font-size: 30px;
+        margin: 20px 20px 0px 20px;
+    }
+
+    .game-status label{
+        color: rgb(162,162,255);
+        letter-spacing: 0.2em;
+    }
+
+    .game label:hover{
+        cursor: pointer;
+    }
+
+    /*  footer  */
+
+
+    footer{
+        display: block;
+        text-align: center;
+        clear: both;
+        padding: 20px;
+    }
+
+    footer hr, label{
+        margin-bottom: 20px;
+    }
+}

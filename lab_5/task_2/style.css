@@ -1,0 +1,14 @@
+label, button{
+    display: block;
+    margin: 10px;
+}
+
+p{
+    color: red;
+    display: inline;
+}
+
+.error{
+    color: red;
+    display: block;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h2>Форма з перевіркою</h2>
+
+    <form onsubmit="return validateForm()">
+        <!-- Ціле число -->
+        <label for="integer">Ціле число<p>*</p>:</label>
+        <input type="text" id="integer" name="integer">
+        <span class="error" id="error-integer"></span>
+
+        <!-- Дійсне число -->
+        <label for="float">Дійсне число:</label>
+        <input type="text" id="float" name="float">
+        <span class="error" id="error-float"></span>
+
+        <!-- Дата у форматі DD.MM.YYYY -->
+        <label for="date">Дата (DD.MM.YYYY):</label>
+        <input type="text" id="date" name="date">
+        <span class="error" id="error-date"></span>
+
+        <!-- Пароль -->
+        <label for="password">Пароль<p>*</p>:</label>
+        <input type="password" id="password" name="password">
+        <span class="error" id="error-password"></span>
+
+        <!-- Перевірка паролю -->
+        <label for="confirmPassword">Підтвердіть пароль<p>*</p>:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword">
+        <span class="error" id="error-confirmPassword"></span>
+
+        <!-- Кнопка відправлення форми -->
+        <button type="button" onclick="validateForm()">Відправити</button>
+    </form>
+</body>
+</html>
