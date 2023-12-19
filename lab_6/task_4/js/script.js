@@ -29,7 +29,6 @@ const client = new Client('user123', 'user123@example.com');
 console.log(client.login); 
 console.log(client.email); 
   
-  // Зміна значення через сеттер:
 client.login = 'newUser123';
 client.email = 'newUser123@example.com';
   

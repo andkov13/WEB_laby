@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var button_lab4 = document.getElementById("lab4");
     var button_lab5 = document.getElementById("lab5");
     var button_lab6 = document.getElementById("lab6");
+    var button_lab7 = document.getElementById("lab7");
 
     var button1 = document.getElementById("button_1");
     var button2 = document.getElementById("button_2");
@@ -113,6 +114,22 @@ document.addEventListener("DOMContentLoaded", function() {
         button7.innerText = "Завдання №6";
         button8.innerText = "Висновок";
         button9.innerText = "";
+        button10.innerText = "";
+        button11.innerText = "";
+        button12.innerText = "";
+    });
+
+    button_lab7.addEventListener("click", function() {
+        lab7EventList();
+        button1.innerText = "Тема, мета";
+        button2.innerText = "Завдання №1";
+        button3.innerText = "Завдання №2";
+        button4.innerText = "Завдання №3";
+        button5.innerText = "Завдання №4";
+        button6.innerText = "Завдання №5";
+        button7.innerText = "Завдання №6";
+        button8.innerText = "Завдання №7";
+        button9.innerText = "Висновок";
         button10.innerText = "";
         button11.innerText = "";
         button12.innerText = "";
@@ -319,6 +336,44 @@ document.addEventListener("DOMContentLoaded", function() {
 
         button8.addEventListener("click", function() {
             displayedImage.src = "images/lab_6/img_7.png";
+        });
+    }
+
+    function lab7EventList(){
+        button1.addEventListener("click", function() {
+            displayedImage.src = "images/lab_7/img_0.png";
+        });
+    
+        button2.addEventListener("click", function() {
+            displayedImage.src = "images/lab_7/1.jpg";
+        });
+    
+        button3.addEventListener("click", function() {
+            displayedImage.src = "images/lab_7/2.jpg";
+        });
+    
+        button4.addEventListener("click", function() {
+            displayedImage.src = "images/lab_7/3.jpg";
+        });
+    
+        button5.addEventListener("click", function() {
+            displayedImage.src = "images/lab_7/4.jpg";
+        });
+
+        button6.addEventListener("click", function() {
+            displayedImage.src = "images/lab_7/5.jpg";
+        });
+
+        button7.addEventListener("click", function() {
+            displayedImage.src = "images/lab_7/6.jpg";
+        });
+
+        button8.addEventListener("click", function() {
+            displayedImage.src = "images/lab_7/7.jpg";
+        });
+        
+        button9.addEventListener("click", function() {
+            displayedImage.src = "images/lab_7/img_8.png";
         });
     }
        
