@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var button_lab5 = document.getElementById("lab5");
     var button_lab6 = document.getElementById("lab6");
     var button_lab7 = document.getElementById("lab7");
+    var button_lab8_9 = document.getElementById("lab8-9");
 
     var button1 = document.getElementById("button_1");
     var button2 = document.getElementById("button_2");
@@ -135,7 +136,24 @@ document.addEventListener("DOMContentLoaded", function() {
         button12.innerText = "";
     });
 
+    button_lab8_9.addEventListener("click", function() {
+        lab8_9EventList();
+        button1.innerText = "Сертифікат";
+        button2.innerText = "";
+        button3.innerText = "";
+        button4.innerText = "";
+        button5.innerText = "";
+        button6.innerText = "";
+        button7.innerText = "";
+        button8.innerText = "";
+        button9.innerText = "";
+        button10.innerText = "";
+        button11.innerText = "";
+        button12.innerText = "";
+    });
+
     function lab1EventList(){
+        clear_Button();
         button1.addEventListener("click", function() {
             displayedImage.src = "images/lab_1/lab1_image1.png";
         });
@@ -166,6 +184,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function lab2EventList(){
+        clear_Button();
         button1.addEventListener("click", function() {
             displayedImage.src = "images/lab_2/img_16.png";
         });
@@ -200,6 +219,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function lab3EventList(){
+        clear_Button();
         button1.addEventListener("click", function() {
             displayedImage.src = "images/lab_3/img_0.png";
         });
@@ -250,6 +270,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
        
     function lab4EventList(){
+        clear_Button();
         button1.addEventListener("click", function() {
             displayedImage.src = "images/lab_4/img_0.png";
         });
@@ -272,6 +293,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function lab5EventList(){
+        clear_Button();
         button1.addEventListener("click", function() {
             displayedImage.src = "images/lab_5/img_0.png";
         });
@@ -306,6 +328,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function lab6EventList(){
+        clear_Button();
         button1.addEventListener("click", function() {
             displayedImage.src = "images/lab_6/img_1.png";
         });
@@ -340,6 +363,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function lab7EventList(){
+        clear_Button();
         button1.addEventListener("click", function() {
             displayedImage.src = "images/lab_7/img_0.png";
         });
@@ -376,5 +400,61 @@ document.addEventListener("DOMContentLoaded", function() {
             displayedImage.src = "images/lab_7/img_8.png";
         });
     }
+
+    function lab8_9EventList(){
+        clear_Button();
+        button1.addEventListener("click", function() {
+            displayedImage.src = "images/lab_8-9/img_1.png";
+        });
+    }
        
+    function clear_Button(){
+        button1.addEventListener("click", function() {
+            displayedImage.src = "";
+        });
+    
+        button2.addEventListener("click", function() {
+            displayedImage.src = "";
+        });
+    
+        button3.addEventListener("click", function() {
+            displayedImage.src = "";
+        });
+    
+        button4.addEventListener("click", function() {
+            displayedImage.src = "";
+        });
+    
+        button5.addEventListener("click", function() {
+            displayedImage.src = "";
+        });
+
+        button6.addEventListener("click", function() {
+            displayedImage.src = "";
+        });
+
+        button7.addEventListener("click", function() {
+            displayedImage.src = "";
+        });
+
+        button8.addEventListener("click", function() {
+            displayedImage.src = "";
+        });
+        
+        button9.addEventListener("click", function() {
+            displayedImage.src = "";
+        });
+
+        button10.addEventListener("click", function() {
+            displayedImage.src = "";
+        });
+
+        button11.addEventListener("click", function() {
+            displayedImage.src = "";
+        });
+
+        button12.addEventListener("click", function() {
+            displayedImage.src = "";
+        });
+    }
 });
